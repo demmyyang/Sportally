@@ -1,0 +1,107 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: auto;
+    font-family: 'karla', sans-serif;
+}
+
+:root {
+    --darkblue: #170463;
+    --background: #eaeaea;
+    --green: #4EBE51;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Work Sans", sans-serif;
+    padding: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    filter: drop-shadow(0px 1px 3px #c5c5c5);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.back_button a {
+    text-decoration: none;
+    color: var(--darkblue);   
+}
+
+.save_button a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+.save_button a:hover{
+    opacity: .6;
+    transition: opacity 0.2s ease-in;
+}
+
+header {
+    display: flexbox;
+    background-color: var(--background);
+    padding: 40px;
+    padding-top: 110px;
+    padding-bottom: 40px;
+}
+
+.title {
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--darkblue);
+    padding-bottom: 3px;
+}
+
+.description {
+    font-size: 18px;
+    color: var(--darkblue);
+}
+
+.button_container {
+    background-color: var(--background);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    display: block;
+    line-height: 4.4em;
+}
+
+button {
+    padding: 17px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--darkblue);
+    border: none;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--green);
+    box-shadow: inset 3px 4px 3px #3a973e;
+
+}
+svg {
+    height:16px;
+    width: 16px;
+}
+
+button:hover svg .st0{
+    fill:#ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 84%;
+    }
+}
